@@ -1,0 +1,98 @@
+name: New Project Request
+description: Request to create a new project in the spring-ai-community organization
+title: "[Project Request] <Project Name>"
+labels: [project-request, new]
+body:
+- type: markdown
+  attributes:
+    value: |
+      Thanks for your interest in contributing to the Spring AI Community! This form will help us evaluate your project for inclusion.
+      
+      Please review the [Project Creation Process](https://github.com/spring-ai-community/community/wiki/Project-Creation-Process) before submitting.
+- type: input
+  attributes:
+    label: Project Name
+    description: Provide a name for your project (consider following the pattern 'spring-ai-[key-feature]')
+    placeholder: e.g., spring-ai-vectorstore
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Project Description
+    description: Clearly describe what your project does, the problems it solves, and how it integrates with Spring AI
+    placeholder: Describe your project's purpose, scope, and goals in 100-300 words
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: Repository URL
+    description: URL to your existing proof of concept implementation (can be a personal repository)
+    placeholder: https://github.com/username/repository
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Integration with Spring AI
+    description: Explain how your project integrates with Spring AI's core APIs and what value it adds to the ecosystem
+    placeholder: Describe how your project uses Spring AI artifacts and extends its functionality
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: Documentation
+    description: Provide a link to your project's documentation (can be a README or wiki)
+    placeholder: https://github.com/username/repository/README.md
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Development Team
+    description: List the primary maintainers/developers committed to this project
+    placeholder: List names and GitHub usernames of committed developers
+  validations:
+    required: true
+- type: checkboxes
+  id: requirements
+  attributes:
+    label: Project Requirements
+    description: Please confirm that your project meets these requirements
+    options:
+      - label: Has working proof of concept that demonstrates integration with Spring AI
+        required: true
+      - label: Includes unit and integration tests
+        required: true
+      - label: Uses or will use Apache 2 license
+        required: true
+      - label: All development will occur in a public repository
+        required: true
+      - label: Agrees to follow the Spring AI code of conduct
+        required: true
+      - label: Will provide clear contribution guidelines
+        required: true
+      - label: Will follow semantic versioning (MAJOR.MINOR.PATCH)
+        required: true
+- type: dropdown
+  id: packaging
+  attributes:
+    label: Preferred Packaging Method
+    description: How do you plan to publish your artifacts?
+    options:
+      - Using GitHub's process with io.github.spring-ai-community as the groupId
+      - Publishing to Maven Central in your own manner
+  validations:
+    required: true
+- type: checkboxes
+  id: commercial
+  attributes:
+    label: Commercial Relationship
+    description: Transparency about commercial relationships
+    options:
+      - label: This project has commercial ownership/control (single-vendor)
+        required: false
+- type: textarea
+  attributes:
+    label: Additional Information
+    description: Any other details that might be relevant to your application
+    placeholder: Add any additional context or information here
+  validations:
+    required: false
