@@ -25,7 +25,7 @@ body:
     required: true
 - type: input
   attributes:
-    label: Repository URL
+    label: Exising Repository URL with POC implementation
     description: URL to your existing proof of concept implementation (can be a personal repository)
     placeholder: https://github.com/username/repository
   validations:
