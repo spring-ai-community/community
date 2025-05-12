@@ -1,3 +1,5 @@
-This repository contains information on the goals of the Spring AI Community and how it operates.
+This repository is used for submitting new project requests for the Spring AI Community.
 
-More information can be found in the [Community Wiki](https://github.com/spring-ai-community/community/wiki)
+For detailed processes and operational guidelines used to run the organization, please refer to the [Community Wiki](https://github.com/spring-ai-community/community/wiki).
+
+Additional resources are available on the [Spring AI Community GitHub organization page](https://github.com/spring-ai-community).
