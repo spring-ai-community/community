@@ -39,8 +39,8 @@ body:
     required: true
 - type: input
   attributes:
-    label: Documentation
-    description: Provide a link to your project's documentation (can be a README or wiki)
+    label: Existing Documentation
+    description: Provide a link to your existing project's documentation (can be a README or wiki)
     placeholder: https://github.com/username/repository/README.md
   validations:
     required: true
